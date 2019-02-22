@@ -1,0 +1,113 @@
+.layout1 article {
+    width: 54%;
+    float: left;
+    background: lightblue;
+    margin: 10px;
+    padding: 10px;
+}
+
+.layout1 aside {
+    width: 40%;
+    float: right;
+    background: lightblue;
+    margin: 10px;
+    padding: 10px;
+}
+
+.layout1 footer {
+    clear: both;
+    background: lightblue;
+    margin: 10px;
+    padding: 10px;
+}
+
+.layout2 header .logo {
+    width: 20%;
+    float: left;
+    background: lightblue;
+    padding: 10px;
+    margin: 0;
+
+}
+
+.layout2 header nav {
+    width: 74%;
+    float: right;
+    margin: 0;
+    background: lightblue;
+    padding: 10px;
+}
+
+.layout2 header::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.layout2 article {
+    width: 50%;
+    background: lightblue;
+    padding: 10px;
+    float: left;
+}
+
+.layout2 aside.sidenav {
+    width: 23%;
+    float: left;
+    background: lightblue;
+}
+
+.layout2 aside.sidebar {
+    width: 23%;
+    float: right;
+    background: lightblue;
+}
+
+.layout2 footer {
+    clear: both;
+    background: lightblue;
+}
+
+.layout3 header .logo {
+    width: 20%;
+    float: right;
+    background: lightblue;
+    padding: 10px;
+    margin: 0;
+
+}
+
+.layout3 header nav {
+    width: 74%;
+    float: left;
+    margin: 0;
+    background: lightblue;
+    padding: 10px;
+}
+
+.layout3 header::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.layout3 article {
+    width: 32%;
+    float: left;
+    margin: 0 2% 0 0;
+    background: lightblue;
+}
+
+.layout3 article:last-child {
+    margin: 0;
+}
+
+.layout3 .articles::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.layout3 footer {
+    background: lightblue;
+}
