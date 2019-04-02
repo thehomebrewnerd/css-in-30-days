@@ -1,0 +1,27 @@
+.accordion {
+    position: relative;
+    display: block;
+    border: solid 1px #e0e0e0;
+    background: white;
+}
+
+.accordion-item {
+    display: block;
+}
+
+.accordion .accordion-content {
+    display: block;
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease, padding 0.3s linear;
+}
+
+.accordion .accordion-content p {
+    padding: 20px;
+    margin: 0;
+}
+
+.accordion .accordion-content:target {
+    height: 150px;
+}
