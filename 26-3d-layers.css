@@ -1,0 +1,51 @@
+.layers {
+    position: relative;
+    min-height: 300px;
+    max-width: 100px;
+}
+
+.layers img {
+    position: absolute;
+    max-width: 100%;
+    height: 100%;
+    transition: all ease 1600ms;
+    transform-style: preserve-3d;
+}
+
+.layers img.mid {
+    top: 150px;
+}
+
+.layers img.top {
+    top: -50px;
+}
+.layers img.back {
+    top: 50px;
+}
+.layers img.tippy {
+    top: 250px;
+}
+
+.layers:hover img {
+    transform: perspective(800px) rotateX(50deg) rotateY(20deg) rotateZ(-25deg)
+    translateX(135px);
+}
+
+.layers:hover img.mid {
+    transform: perspective(800px) rotateX(50deg) rotateY(20deg) rotateZ(-25deg)
+    translateX(135px) translateZ(50px);
+}
+
+.layers:hover img.tippy {
+    transform: perspective(800px) rotateX(50deg) rotateY(20deg) rotateZ(-25deg)
+    translateX(135px) translateZ(-100px);
+}
+
+.layers:hover img.top {
+    transform: perspective(800px) rotateX(50deg) rotateY(20deg) rotateZ(-25deg)
+    translateX(135px) translateZ(100px);
+}
+.layers:hover img.back {
+    transform: perspective(800px) rotateX(50deg) rotateY(20deg) rotateZ(-25deg)
+    translateX(135px) translateZ(125px);
+}
